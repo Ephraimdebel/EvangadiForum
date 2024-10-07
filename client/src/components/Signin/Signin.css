@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  background-image: url(https://www.evangadi.com/themes/humans/assets/images/misc/bg-svg-f.svg);
+  background-size: cover;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.join a{
+  color: #e68a00;
+}
+
+.join a:hover{
+  color:#1a73e8 ;
+}
+
+
+
+.formSection,
+.infoSection {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.formSection form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.formSection input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.formSection button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 12px;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formSection button:hover {
+  background-color: rgb(255, 133, 0);
+}
+
+.formSection .two {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+
+
+}
+.formSection input{
+  width: 100%;
+}
+
+.two input{
+  justify-content: space-between;
+  margin-left: 10px;
+width: 50%;
+}
+
+
+
+
+.formSection .infoSection{
+  display: inline-block;
+  display: flex;
+}
+
+
+.terms {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.terms a:hover{
+color: white;
+  /* padding: 12px; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #1a73e8;
+  text-decoration: none;
+}
+.terms a{
+  color: #e68a00;
+}
+
+.account a{
+  color: #e68a00;
+}
+
+.infoSection .about{
+  color: #e68a00;
+}
+
+
+
+.infoSection h2 {
+  margin-bottom: 20px;
+}
+
+
+.infoSection p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+.howItWorks a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff9100;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.howItWorks a:hover {
+  background-color: #e68a00;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+ max-width: 100%;
+  }
+
+
+  .formSection, .infoSection {
+    width: 90%;
+    max-width: none;
+  }
+}
