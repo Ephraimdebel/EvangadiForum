@@ -1,0 +1,109 @@
+.footer {
+  display: flex;
+  justify-content: center; /* Center the footer content */
+  padding: 40px 20px; /* Padding for the footer */
+  background-color: rgb(52, 71, 103); /* Background color */
+  color: #fff; /* Text color */
+}
+
+.footerContainer {
+  max-width: 1200px; /* Max width for the footer content */
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: space-between; /* Space between the sections */
+  align-items: flex-start; /* Align items to the top */
+  gap: 60px; /* Space between sections */
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column; /* Stack logo and icons vertically */
+  align-items: flex-start; /* Align to the left */
+}
+.logoAndIcons {
+  padding-left: 50px auto;
+}
+
+.evandiLogo {
+  width: 150px; /* Adjust logo width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below the logo */
+  margin-top: 10px;
+  /* margin-left: 50px 0; */
+}
+
+.footerSocial {
+  display: flex; /* Align icons in a row */
+  justify-content: flex-start; /* Align icons to the left */
+  gap: 20px; /* Space between icons */
+}
+
+.socialIcon {
+  color: #ffffff; /* Set icon color to white */
+  font-size: 28px; /* Adjust icon size */
+}
+
+/* .rightSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  gap: 80px;
+} */
+.footerLinksContact {
+  display: flex; /* Flexbox for side-by-side layout */
+  justify-content: space-between; /* Space between sections */
+  width: 100%; /* Full width */
+  max-width: 800px; /* Max width for combined sections */
+  /* slightly for combined sections */
+  margin-bottom: 60px; /* increased space below the links and contact sections */
+  /* padding-top: 20px; */
+  padding-bottom: 300px;
+  z-index: 0; /* Below the logo and icons */
+}
+
+.footerLinks,
+.footerContact {
+  margin: 0 20px; /* Space around sections */
+  flex: 1; /* Allow sections to grow */
+}
+
+.footerLinks h3,
+.footerContact h3 {
+  margin-bottom: 15px; /* Space below section headers */
+}
+
+.footerLinks ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.footerLinks li {
+  margin: 5px 0; /* Space between links */
+}
+
+.footerLinks a,
+.footerContact a {
+  color: #fff; /* White color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.footerContact p {
+  margin-bottom: 5px; /* Space between contact info items */
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  .footerLinksContact {
+    flex-direction: column; /* Stack sections vertically on small screens */
+    align-items: center; /* Center sections */
+    margin-top: 20px; /*adjusted margin for small screens*/
+    margin-bottom: 50px; /*adjusted margin for small screens*/
+  }
+
+  .footerLinks,
+  .footerContact {
+    width: 100%; /* Full width on small screens */
+    text-align: center; /* Center text */
+  }
+}
