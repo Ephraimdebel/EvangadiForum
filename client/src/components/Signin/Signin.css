@@ -1,11 +1,13 @@
-body {
+.body {
   margin: 0;
   background-image: url(https://www.evangadi.com/themes/humans/assets/images/misc/bg-svg-f.svg);
   background-size: cover;
+  font-family:poppins, sans-serif ;
 }
 
 
 .container {
+  background-image: url(../../assets/bg-svg-f.svg);
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -64,9 +66,9 @@ body {
 
 .formSection .two {
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
-
+  gap: 20px;
 
 }
 .formSection input{
