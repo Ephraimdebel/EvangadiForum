@@ -62,8 +62,7 @@ const Footer = () => {
           <div className={styles.footerContact}>
             <h3>Contact Info</h3>
             <p>
-              Email:{" "}
-              <a href="mailto:support@evangadi.com">support@evangadi.com</a>
+              Email: <a href="">support@evangadi.com</a>
             </p>
             <p>Phone: +1-123-456-7890</p>
           </div>

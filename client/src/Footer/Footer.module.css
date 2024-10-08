@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between; /* Space between the sections */
   align-items: flex-start; /* Align items to the top */
-  gap: 60px; /* Space between sections */
+  gap: 40px; /* Space between sections */
 }
 
 .leftSection {
@@ -20,9 +20,9 @@
   flex-direction: column; /* Stack logo and icons vertically */
   align-items: flex-start; /* Align to the left */
 }
-.logoAndIcons {
+/* .logoAndIcons {
   padding-left: 50px auto;
-}
+} */
 
 .evandiLogo {
   width: 150px; /* Adjust logo width */
@@ -56,21 +56,22 @@
   width: 100%; /* Full width */
   max-width: 800px; /* Max width for combined sections */
   /* slightly for combined sections */
-  margin-bottom: 60px; /* increased space below the links and contact sections */
-  /* padding-top: 20px; */
-  padding-bottom: 300px;
+  margin-bottom: 30px; /* increased space below the links and contact sections */
+
+  padding-bottom: 0px;
   z-index: 0; /* Below the logo and icons */
 }
 
-.footerLinks,
-.footerContact {
-  margin: 0 20px; /* Space around sections */
-  flex: 1; /* Allow sections to grow */
-}
+/* .footerLinks,
+.footerContact { */
+/* margin: 0 20px; Space around sections */
+/* flex: 1; Allow sections to grow */
+/* } */
 
 .footerLinks h3,
 .footerContact h3 {
-  margin-bottom: 15px; /* Space below section headers */
+  margin-bottom: 10px; /* Space below section headers */
+  /* color: #3b455a; */
 }
 
 .footerLinks ul {
@@ -84,8 +85,15 @@
 
 .footerLinks a,
 .footerContact a {
-  color: #fff; /* White color for links */
+  color: #3b455a; /* initial color before hover */
   text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /*  Transition for hover effect */
+}
+.footerLinks a:hover,
+.footerContact a:hover,
+.footerLinks a:visited,
+.footerContact a:visited {
+  color: #fff; /* Turn white on hover and after click */
 }
 
 .footerContact p {
@@ -94,16 +102,39 @@
 
 /* Responsive Styles */
 @media (max-width: 700px) {
+  .footerContainer {
+    flex-direction: column; /* Stack everything vertically */
+    align-items: flex-start; /* Align everything to the left on small screens */
+  }
+
   .footerLinksContact {
     flex-direction: column; /* Stack sections vertically on small screens */
-    align-items: center; /* Center sections */
-    margin-top: 20px; /*adjusted margin for small screens*/
-    margin-bottom: 50px; /*adjusted margin for small screens*/
+    align-items: flex-start;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
   }
 
   .footerLinks,
   .footerContact {
     width: 100%; /* Full width on small screens */
-    text-align: center; /* Center text */
+    text-align: flex-start;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .leftSection {
+    /*order: 1;  Move logo and icons to the bottom */
+    margin-top: 30px;
+  }
+  .evandiLogo {
+    width: 120px; /* Adjust logo size for small screens */
+  }
+
+  .footerSocial {
+    justify-content: flex-start; /* Center align social icons */
+  }
+
+  .socialIcon {
+    font-size: 24px; /* Slightly smaller icons on small screens */
   }
 }
