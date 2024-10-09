@@ -1,0 +1,3 @@
+useNavigate hook is being used in components that are wrapped by a router like <BrowserRouter>, and the root of your app is wrapped in the appropriate <Router> component.
+
+*****Axios to retrieve the data from the API and render it in your React app.

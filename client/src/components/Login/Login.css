@@ -1,0 +1,415 @@
+/* Reset some default styles
+.login-page {
+  margin: 0;
+  background-image: url(https://www.evangadi.com/themes/humans/assets/images/misc/bg-svg-f.svg);
+  background-size: cover;
+}
+
+/* Outer container 
+.outer-container {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Login container 
+.login-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 5px 20px rgba(0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 600px;
+  width: 600px;
+margin-top: 400px;
+
+}
+
+.login-container h2 {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(45, 56, 94);
+  text-align: center;
+  padding-top: 100px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+input[type="password"] {
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+.new-account {
+  padding-bottom: 20px;
+  font-family: Lato, sans-serif;
+}
+a {
+  color: orangered;
+  text-decoration: none;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+}
+.New-account-2 {
+  padding-top: 30px;
+}
+
+/* container 
+.p-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+.p-container h1 {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 40;
+  color: rgb(75, 69, 111);
+  font-weight: 500;
+}
+.p-container p {
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(75, 69, 111);
+}
+.last-button {
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 200px;
+  margin-top: 30px;
+}
+
+/* Form elements 
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-button,
+.last-button {
+  width: 150px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ff8500;
+  color: white;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;  
+}
+
+.password-container input {
+  flex: 1; 
+  margin-left: 10px; 
+  padding-left: 35px; 
+}
+
+.eye-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute; 
+  left: 10px; 
+  display: flex; 
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .outer-container {
+    padding: 40px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .login-container{
+    margin-top: -10px;
+  }
+  .p-container h1 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 40;
+    color: rgb(75, 69, 111);
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 968px) {
+  .outer-container {
+    padding: 60px;
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .login-container {
+    width: 100%;
+    padding: 70px;
+    max-width: 530px;
+    margin-top: -10px;
+  }
+} */
+
+
+/* Reset some default styles */
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* font-family: Lato, sans-serif; */
+}
+
+.login-page {
+  margin: 0;
+  background-image: url(https://www.evangadi.com/themes/humans/assets/images/misc/bg-svg-f.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* Login/Signup Form Container */
+.login-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: left; /* Changed to left for better form alignment */
+  margin: 20px auto;
+}
+
+/* Accompanying Text Container */
+.p-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  text-align: left;
+  margin: 20px auto;
+}
+
+.login-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(45, 56, 94);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.eye-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+.new-account {
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: orangered;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+  padding: 0;
+}
+
+a {
+  color: orangered;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.New-account-2 {
+  padding-top: 30px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-button,
+.last-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff8500;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:disabled {
+  background-color: #ffa366;
+  cursor: not-allowed;
+}
+
+.last-button {
+  margin-top: 30px;
+}
+
+.p-container h1 {
+  font-size: 36px;
+  color: rgb(75, 69, 111);
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.p-container p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(75, 69, 111);
+  margin-bottom: 15px;
+}
+.name-container{
+  display: flex;
+  gap: 10px;
+}
+/* Responsive Design */
+@media (min-width: 768px) {
+  .outer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login-container, .p-container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .outer-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+
+.eye-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .outer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .login-container {
+    margin: 0;
+  }
+}
+
+@media (min-width: 968px) {
+  .outer-container {
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .login-container {
+    max-width: 530px;
+    padding: 70px;
+  }
+}
