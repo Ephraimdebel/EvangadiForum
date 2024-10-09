@@ -32,22 +32,22 @@ function Signin() {
 
   return (
     <div className="container">
-      <div className="formSection">
+   
+    <div className="formSection">
         <h2>Join the network</h2>
         <p className="join"> 
-          Already have an account? <a href="#">Sign in</a>
+          Already have an account? <a
+          >Sign in</a>
         </p>
         <form onSubmit={handlesubmit}>
           <div>
             <input  ref={emailDom} type="email" placeholder="Email" />
           </div>
-
           <div className="two">
-            <input  ref={firstnameDom} type="text" placeholder="First Name" />
-            <input   ref={lastnameDom} type="text" placeholder="Last Name" />
+            <div className="name-field"><input  ref={firstnameDom} type="text" placeholder="First Name" /></div>
+            <div className="name-field"> <input   ref={lastnameDom} type="text" placeholder="Last Name" /></div>
+            
           </div>
-
-         
 
           <div>
             <input  ref={usernameDom}  type="text" placeholder="User Name" />
@@ -73,7 +73,7 @@ function Signin() {
 
       <div className="infoSection">
         <h2 className="about">About</h2>
-        <h2>Evangadi Networks Q&A</h2>
+        <h2 className="eva">Evangadi Networks Q&A</h2>
         <p>
           No matter what stage of life you are in, whether you’re just starting
           elementary school or being promoted to CEO of a Fortune 500 company,
@@ -90,13 +90,6 @@ function Signin() {
           <a href="#">HOW IT WORKS</a>
         </p>
       </div>
-
-
-
-
-
-
-
     </div>
 
   );

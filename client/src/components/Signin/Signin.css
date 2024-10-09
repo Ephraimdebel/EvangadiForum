@@ -1,20 +1,16 @@
-.body {
-  margin: 0;
-  background-image: url(https://www.evangadi.com/themes/humans/assets/images/misc/bg-svg-f.svg);
-  background-size: cover;
-  font-family:poppins, sans-serif ;
-}
-
 
 .container {
-  background-image: url(../../assets/bg-svg-f.svg);
+  background-image: url('../assets/bgimage.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full-screen height */
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 20px;
-  gap: 50px;
-  background-color: #f5f5f5;
-  min-height: 100vh;
 }
+
 
 .join a{
   color: #e68a00;
@@ -26,8 +22,8 @@
 
 
 
-.formSection,
-.infoSection {
+.formSection 
+{
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -51,13 +47,15 @@
 }
 
 .formSection button {
-  background-color: #1a73e8;
+  background-color: #007bff; /* Blue color */
   color: white;
-  padding: 12px;
-
+  padding: 15px;
   border: none;
-  border-radius: 5px;
+  border-radius:5px;
   cursor: pointer;
+  width: 100%;
+ font-size: 16px;
+
 }
 
 .formSection button:hover {
@@ -76,11 +74,18 @@
 }
 
 .two input{
-  justify-content: space-between;
-  margin-left: 10px;
-width: 50%;
+display: flex;
+justify-content: space-between;
 }
 
+.name-field {
+  flex: 1;
+  margin-right: 10px; /* Space between fields */
+}
+
+.name-field:last-child {
+  margin-right: 0; /* Remove margin from the last field */
+}
 
 
 
@@ -89,7 +94,10 @@ width: 50%;
   display: flex;
 }
 
-
+.infoSection{
+ background-color: transparent;
+background: none;
+}
 .terms {
   margin-top: 10px;
   font-size: 14px;
@@ -97,7 +105,7 @@ width: 50%;
 
 .terms a:hover{
 color: white;
-  /* padding: 12px; */
+  padding: 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -110,6 +118,13 @@ color: white;
 
 .account a{
   color: #e68a00;
+}
+
+.infoSection{
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 20px;
+  margin: 10px;
 }
 
 .infoSection .about{
@@ -129,6 +144,16 @@ color: white;
   color: #333;
 }
 
+.infoSection .eva{
+  font-family:Poppins sans-serif ;
+font-style: normal;
+  font-weight: 600;
+  color: rgb(75, 69, 111) ;
+  line-height: 56px;
+ 
+}
+
+
 .howItWorks a {
   display: inline-block;
   margin-top: 20px;
@@ -143,6 +168,8 @@ color: white;
   background-color: #e68a00;
 }
 
+
+
 /* Responsive styling */
 @media (max-width: 768px) {
   .container {
@@ -154,7 +181,9 @@ color: white;
 
 
   .formSection, .infoSection {
-    width: 90%;
-    max-width: none;
+    /* width: 90%;
+    max-width: none; */
+    max-width: 100%;
+  
   }
 }
