@@ -1,0 +1,189 @@
+
+.container {
+  background-image: url('../assets/bgimage.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full-screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+
+.join a{
+  color: #e68a00;
+}
+
+.join a:hover{
+  color:#1a73e8 ;
+}
+
+
+
+.formSection 
+{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.formSection form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.formSection input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.formSection button {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius:5px;
+  cursor: pointer;
+  width: 100%;
+ font-size: 16px;
+
+}
+
+.formSection button:hover {
+  background-color: rgb(255, 133, 0);
+}
+
+.formSection .two {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+
+}
+.formSection input{
+  width: 100%;
+}
+
+.two input{
+display: flex;
+justify-content: space-between;
+}
+
+.name-field {
+  flex: 1;
+  margin-right: 10px; /* Space between fields */
+}
+
+.name-field:last-child {
+  margin-right: 0; /* Remove margin from the last field */
+}
+
+
+
+.formSection .infoSection{
+  display: inline-block;
+  display: flex;
+}
+
+.infoSection{
+ background-color: transparent;
+background: none;
+}
+.terms {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.terms a:hover{
+color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #1a73e8;
+  text-decoration: none;
+}
+.terms a{
+  color: #e68a00;
+}
+
+.account a{
+  color: #e68a00;
+}
+
+.infoSection{
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.infoSection .about{
+  color: #e68a00;
+}
+
+
+
+.infoSection h2 {
+  margin-bottom: 20px;
+}
+
+
+.infoSection p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+.infoSection .eva{
+  font-family:Poppins sans-serif ;
+font-style: normal;
+  font-weight: 600;
+  color: rgb(75, 69, 111) ;
+  line-height: 56px;
+ 
+}
+
+
+.howItWorks a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff9100;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.howItWorks a:hover {
+  background-color: #e68a00;
+}
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+ max-width: 100%;
+  }
+
+
+  .formSection, .infoSection {
+    /* width: 90%;
+    max-width: none; */
+    max-width: 100%;
+  
+  }
+}
