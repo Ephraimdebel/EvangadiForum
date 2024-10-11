@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 body {
   margin: 0;
   background-image: url(https://www.evangadi.com/themes/humans/assets/images/misc/bg-svg-f.svg);
@@ -125,23 +125,23 @@ input {
 }
 .password-container {
   display: flex;
-  align-items: center; /* Center vertically */
-  position: relative; /* Position relative for absolute positioning of the button */
+  align-items: center; 
+  position: relative; 
 }
 
 .password-container input {
-  flex: 1; /* Take up available space */
-  margin-left: 10px; /* Space between button and input */
-  padding-left: 35px; /* Add padding to input for better text placement */
+  flex: 1; 
+  margin-left: 10px; 
+  padding-left: 35px; 
 }
 
 .eye-button {
   background: none;
   border: none;
   cursor: pointer;
-  position: absolute; /* Position button inside input */
-  left: 10px; /* Position from the left */
-  display: flex; /* Center icon */
+  position: absolute; 
+  left: 10px; 
+  display: flex; 
   align-items: center;
 }
 /* media query for tablet */
@@ -167,7 +167,7 @@ input {
     font-weight: 500;
   }
 }
-/* media query for  */
+/* media query for pc */
 
 @media (min-width: 968px) {
   .outer-container {
