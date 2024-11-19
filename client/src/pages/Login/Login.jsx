@@ -98,16 +98,7 @@ const Login = () => {
           localStorage.setItem("userid", response.data.userid);
           setUser(response.data); // Update user context if necessary
 
-          // const redirectTo = navStateData.state?.redirect || "/";
-          // navigate(redirectTo, { replace: true }); // Redirect to 
-
-          // setTimeout(() => {
-          //   navigate("/"); // Redirect after successful login
-          // }, 0);
-          // console.log(navStateData?.state?.redirect)
-          // navigate(navStateData?.state?.redirect || "/",{replace:true})
-
-          //navigate("/"); // Redirect to home after a short delay to allow toast to show
+          
         }else{
           toast.error("Login failed. Please check your credentials. if you don't have an account, please signup first.");
         }

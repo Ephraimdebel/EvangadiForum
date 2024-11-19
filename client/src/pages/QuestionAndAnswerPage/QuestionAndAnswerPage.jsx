@@ -20,8 +20,6 @@ const QuestionAndAnswerPage = () => {
   const [displayedanswer, setDisplayedanswer] = useState(4)
 
 
-
-
   useEffect(() => {
 async function fetchData() {
   try {

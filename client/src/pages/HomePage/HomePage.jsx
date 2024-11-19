@@ -13,6 +13,7 @@ function HomePage() {
   const { user } = useContext(AppState);
   const token = localStorage.getItem('token');
 
+
   useEffect(() => {
     async function getQuestions() {
       try {
@@ -59,7 +60,7 @@ function HomePage() {
       <p className={classes.title}>Questions</p>
 
       {/* Display the questions */}
-      {questions.slice().reverse().slice(0, displayedQuestions).map((question, index) => (
+      {questions.slice(0, displayedQuestions).map((question, index) => (
         <QuestionsInfo
           key={index}
           username={question.username}
